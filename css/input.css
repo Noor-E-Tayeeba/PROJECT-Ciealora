@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities{
+    body{
+        font-family: "Inter", sans-serif;
+    }
+
+    /* custom class  */
+    .nav-link{
+        @apply md:font-semibold md:text-xl font-medium text-lg text-primary hover:text-primary/80;
+    }
+
+    .btn-design{
+        @apply bg-primary px-5 py-2 rounded-lg shadow-lg shadow-emerald-900/50 hover:bg-primary/80  text-white font-semibold border-solid border-2 border-primary hover:border-primary/70 transition ease-in-out delay-100;
+    }
+    .btn-inwhite{
+        @apply bg-white text-primary px-5 py-3 rounded-lg shadow-lg shadow-emerald-900/50  hover:bg-primary/80 hover:text-white transition ease-in-out delay-100  font-semibold border-solid border border-primary ;
+    }
+}
